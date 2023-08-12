@@ -6,7 +6,7 @@ pag = FastAPI()
 pag.title = "metodos HTTP con FastAPI"
 pag.version = "1.2"
 
-movies = [
+movies = [ # creamos una lista de diccionarios en este caso solo tiene uno
     {
         "id" : 1,
         "titulo" : "El Señor De Los Anillos",
@@ -20,7 +20,9 @@ movies = [
 def msj ():
     return HTMLResponse("<h1> Hola </h> ") #como podemos ver es un operador 
 
-@pag.get("/Movies", tags= ["movies"] )
+@pag.get("/Movies", tags= ["movies"] ) #con el metodo get creamos una nueva ruta
 
-def get_movies():
-    return movies
+def get_movies(): #esta funcion nos retorna la listga de peliculas que tenemos
+    return movies # la lista ubicada esta debajo de la delcaracion del fastapi
+
+
