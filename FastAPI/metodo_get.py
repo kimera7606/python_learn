@@ -12,6 +12,12 @@ movies = [ # creamos una lista de diccionarios en este caso solo tiene uno
         "titulo" : "El Señor De Los Anillos",
         "yer ": 2000,
         "categoria" : "fantasia"
+     },
+    {
+        "id" : 2,
+        "titulo" : "300",
+        "yer ": 2000,
+        "categoria" : "fantasia"
      }
 ]
 

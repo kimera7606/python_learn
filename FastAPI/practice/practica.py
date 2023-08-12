@@ -1,13 +1,34 @@
 from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
+pag = FastAPI ()
+pag.title = "Pag de Pelis"
+pag.version = "1.0"
 
-app = FastAPI()
-app.title = "Aprendiendo API con FastAPI en PLATZI"
-app.version = "3.3.9"
+pelis = [
+    {
+        "id" : 1,
+        "titulo" : "El Señor De Los Anillos",
+        "yer ": 2000,
+        "categoria" : "fantasia"
+     },
+    {
+        "id" : 2,
+        "titulo" : "300",
+        "yer ": 2000,
+        "categoria" : "fantasia"
+     }
+]
 
-@app.get("/", tags= ["inicio", "servicios", "menu"])
+@pag.get("/peliculas", tags= ["catalogo"])
 
-def msj ():
-    return "holis cara de bolis"
+def menu():
+    return HTMLResponse("<h1> Bievenido a mi pagina de pelis </h1>")
+
+@pag.get("/movies", tags= ["movies"])
+
+def get_movies ():
+    return pelis
+
 
 
 
