@@ -1,10 +1,11 @@
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
-pag = FastAPI ()
-pag.title = "Pag de Pelis"
-pag.version = "1.0"
 
-pelis = [
+pag = FastAPI()
+pag.title = "mi paginita"
+pag.version = "1.2"
+
+movies = [ 
     {
         "id" : 1,
         "titulo" : "El Señor De Los Anillos",
@@ -19,16 +20,16 @@ pelis = [
      }
 ]
 
-@pag.get("/peliculas", tags= ["catalogo"])
+@pag.get("/", tags= ["menu"])
 
-def menu():
-    return HTMLResponse("<h1> Bievenido a mi pagina de pelis </h1>")
+def inicio():
+    return HTMLResponse ("<h1> Bievenidos a mi pagina </h1> <p> tendramos muchas pelis para ti </p>")
 
-@pag.get("/movies", tags= ["movies"])
-
-def get_movies ():
-    return pelis
-
-
+@pag.get("/movies/{id}", tags= ["films"])
+def get_movie(id:int):
+    for i in movies:
+        if i["id"] == id:
+            return i
+    return []
 
 
