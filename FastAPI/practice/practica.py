@@ -1,35 +1,54 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Body
 from fastapi.responses import HTMLResponse
 
-pag = FastAPI()
-pag.title = "mi paginita"
-pag.version = "1.2"
+app = FastAPI()
+app.title = "Aprendiendo Backend con FastAPI"
+app.version = "1.2"
 
 movies = [ 
     {
         "id" : 1,
         "titulo" : "El Señor De Los Anillos",
-        "yer ": 2000,
+        "year ": 2000,
         "categoria" : "fantasia"
      },
     {
         "id" : 2,
         "titulo" : "300",
-        "yer ": 2000,
-        "categoria" : "fantasia"
+        "year ": 2008,
+        "categoria" : "accion"
      }
 ]
 
-@pag.get("/", tags= ["menu"])
+@app.get("/")
+def inicio ():
+    return HTMLResponse("<h1>Bievenido a mi pagina de pelis</h1><p>La mejor pagina de pelis del mundo</p>")
 
-def inicio():
-    return HTMLResponse ("<h1> Bievenidos a mi pagina </h1> <p> tendramos muchas pelis para ti </p>")
+@app.get("/Movies" , tags= ["list_movies"])
+def content():
+    return movies
 
-@pag.get("/movies/{id}", tags= ["films"])
-def get_movie(id:int):
+@app.get("/Movies/{id}", tags= ["movies"])
+def get_movie_id(id:int):
     for i in movies:
         if i["id"] == id:
             return i
     return []
+@app.get("/Movies/", tags= ["movies"])
+def get_movies_category(category:str):
+    for i in movies:
+        if i["categoria"] == category:
+            return i
+    return []
 
-
+@app.post("/Movies/add/", tags= ["movies"])
+def add_movie(id:int = Body(), titulo:str = Body(),year:int = Body(), categoria :str = Body() ):
+    movies.append(
+        {
+            "id" : id,
+            "titulo" : titulo,
+            "year" : year,
+            "categoria" :categoria
+        }
+    )
+    return movies
