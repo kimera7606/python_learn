@@ -47,21 +47,20 @@ async def add_movie(id:int = Body(), titulo:str = Body(), year:int = Body(), cat
         }
     )
     return movies
-@app.put("/Movies/{id}", tags= ["movies"])
+#aqui tenemos ambos metodos seguidos es facil poder leer la sintexis
+@app.put("/Movies/{id}", tags= ["movies"]) #para modifica pedimos el id
 async def update_movie(id:int, titulo:str = Body(),year:int = Body(), categoria:str = Body() ):
-    for i in movies:
+    for i in movies: #en este bloque modificamos el diccionario segun su id
         if i["id"] == id:
             i["titulo"] = titulo,
             i["year"] = year,
             i["categoria"] = categoria
-    return movies
+    return movies #retinamos la lista nueva con el dicc modificado
 
-@app.delete("/Movies/{id}", tags=["movies"])
+@app.delete("/Movies/{id}", tags=["movies"]) #aqui usamos el metodo para borrar por id
 async def remove_movie(id:int):
     for i in movies:
         if i["id"] == id:
-            movies.remove(i)
+            movies.remove(i) #utilizando el metodo de remove de las listas
     return movies
             
-    
-

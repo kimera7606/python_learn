@@ -54,12 +54,14 @@ def get_movie_by_category(category:str,year : int): #una funcion con parametros
     return []
 #metodo post()
 
-@pag.post("/Movies/", tags= ["movies"])
-def create_movie(id:int = Body(), titulo:str = Body(),year:int = Body(),categoria:str = Body()):
-    movies.append( {
-        "id" : id,
+@pag.post("/Movies/", tags= ["movies"]) #aqui usamos le metodo post
+def create_movie(id:int = Body(), titulo:str = Body(),year:int = Body(),categoria:str = Body()): #como vemos suvimos que importar body de fastapi, y le asignamos a cada parametro, en este caso es para alimentar nuestra api de nueva informacion
+    movies.append( { #utilizamos el metodo de lista append() para agregar el nuevo dicc
+        "id" : id, #asignamos las variables al diccionario
         "titulo" : titulo,
         "year" : year,
         "categoria" : categoria
     })
-    return movies
+    return movies #una vez terminado retornamos la lista con el dict que añadimos nuevo
+#podemos incluirlo en la documentacion de swangger, se cguardara mientras este en line la api
+
