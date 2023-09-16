@@ -1,0 +1,19 @@
+sudo apt update
+sudo mysql -u root -p
+
+mysql > use myqsl
+mysql> SELECT User, Host, plugin 
+FROM mysql.user;
+
+#Debemos cambiar el plugin de auth_socket
+# a mysql_native_password.
+
+mysql> UPDATE user SET 
+plugin='mysql_native_password' 
+WHERE User='root';
+mysql> FLUSH PRIVILEGES;
+
+#Revisamos los cambios:
+
+mysql> SELECT User, Host, plugin 
+FROM mysql.user;
