@@ -153,6 +153,128 @@ frase_pronombre_and_verbs = {
     "USTEDES TIENEN" : "YOU HAVE",  
 }
 
+tiempos_will = {
+    "YO IRE" : "I WILL GO",
+    "TU IRAS" : "YOU WILL GO",
+    "NOSOTROS IREMOS" : "WE WILL GO",
+    "EL IRA" : "HE WILL GOES",
+    "ELLA IRA" : "SHE WILL GOE",
+    "ESO IRA" : "IT WILL GOE",
+    "ELLOS IRAN" : "THEY WILL GO",
+    "USTEDES IRAN" : "YOU WILL GO",
+    "YO VENDRE" : "I WILL COME",
+    "TU VENDRAS" : "YOU WILL COME",
+    "NOSOTROS VENDREMOS" : "WE WILL COME",
+    "EL VENDRA" : "HE WILL COME",
+    "ELLA VENDRA" : "SHE WILL COME",
+    "ESO VENDRA" : "IT WILL COME",
+    "ELLOS VENDRAN" : "THEY WILL COME",
+    "USTEDES VENDRAN" : "YOU WILL COME",
+    "YO DARE" : "I WILL GIVE",
+    "TU DARAS" : "YOU WILL GIVE",
+    "NOSOTROS DAREMOS" : "WE WILL GIVE",
+    "EL DARA" : "HE WILL GIVE",
+    "ELLA DARA" : "SHE WILL GIVE",
+    "ESO DARA" : "IT WILL GIVE",
+    "ELLOS DRAN" : "THEY WILL GIVE",
+    "USTEDES DARAN" : "YOU WILL GIVE",
+    "YO TOMARE" : "I WILL TAKE",
+    "TU TOMARAS" : "YOU WILL TAKE",
+    "NOSOTROS TOMAREMOS" : "WE WILL TAKE",
+    "EL TOMARA" : "HE WILL TAKE",
+    "ELLA TOMARA" : "SHE WILL TAKE",
+    "ESO TOMARA" : "IT WILL TAKE",
+    "ELLOS TOMARAN" : "THEY WILL TAKE",
+    "USTEDES TOMARAN" : "YOU WILL TAKE",
+    "YO MANTENDRE" : "I WILL KEEP",
+    "TU MANTENDRA" : "YOU WILL KEEP",
+    "NOSOTROS MANTENDREMOS" : "WE WILL KEEP",
+    "EL MANTENDRA" : "HE WILL KEEP",
+    "ELLA MANTENDRA" : "SHE WILL KEEP",
+    "ESO MANTENDRA" : "IT WILL KEEP",
+    "ELLOS MANTENDRAN" : "THEY WILL KEEP",
+    "USTEDES MANTENDRAN" : "YOU WILL KEEP",
+    "YO DEJARE" : "I WILL LET",
+    "TU DEJARAS" : "YOU WILL LET",
+    "NOSOTROS DEJAREMOS" : "WE WILL LET",
+    "EL DEJARA" : "HE WILL LET",
+    "ELLA DEJARA" : "SHE WILL LET",
+    "ESO DEJARA" : "IT WILL LET",
+    "ELLOS DEJARAN" : "THEY WILL LET",
+    "USTEDES DEJARAN" : "YOU WILL LET",
+    "YO VERE" : "I WILL SEE",
+    "TU VERAS" : "YOU WILL SEE",
+    "NOSOTROS VEREMOS" : "WE WILL SEE",
+    "EL VERA" : "HE WILL SEE",
+    "ELLA VERA" : "SHE WILL SEE",
+    "ESO VERA" : "IT WILL SEE",
+    "ELLOS VERAN" : "THEY WILL SEE",
+    "USTEDES VERAN" : "YOU WILL SEE",
+    "YO PAREZCERE" : "I WILL SEEM",
+    "TU PARECERAS" : "YOU WILL SEEM",
+    "NOSOTROS PARECEREMOS" : "WE WILL SEEM",
+    "EL PARECERA" : "HE WILL SEEM",
+    "ELLA PARECERA" : "SHE WILL SEEM",
+    "ESO PARECERA" : "IT WILL SEEM",
+    "ELLOS PARECERAN" : "THEY WILL SEEM",
+    "USTEDES PARECERAN" : "YOU WILL SEEM",
+    "YO CONSEGUIRE" : "I WILL GET",
+    "TU CONSEGUIRAS" : "YOU WILL GET",
+    "NOSOTROS CONSEGUIREMOS" : "WE WILL GET",
+    "EL CONSIGUIRA" : "HE WILL GET",
+    "ELLA CONSIGUIRA" : "SHE WILL GET",
+    "ESO CONSIGUIRA" : "IT WILL GET",
+    "ELLOS CONSIGUIRAN" : "THEY WILL GET",
+    "USTEDES CONSIGUIRAN" : "YOU WILL GET",
+    "YO HARE/ACCION" : "I WILL DO",
+    "TU HARAS/ACCION" : "YOU WILL DO",
+    "NOSOTROS HAREMOS/ACCION" : "WE WILL DO",
+    "EL HARA/ACCION" : "HE WILL DO",
+    "ELLA HARA/ACCION" : "SHE WILL DO",
+    "ESO HARA/ACCION" : "IT WILL DO",
+    "ELLOS HARAN/ACCION" : "THEY WILL DO",
+    "USTEDES HARAN/ACCION" : "YOU WILL DO",
+    "YO HARE/CREAR" : "I WILL MAKE",
+    "TU HARAS/CREAR" : "YOU WILL MAKE",
+    "NOSOTROS HAREMOS/CREAR" : "WE WILL MAKE",
+    "EL HARA/CREAR" : "HE WILL MAKE",
+    "ELLA HARA/CREAR" : "SHE WILL MAKE",
+    "ESO HARA/CREAR" : "IT WILL MAKE",
+    "ELLOS HARAN/CREAR" : "THEY WILL MAKE",
+    "USTEDES HARAN/CREAR" : "YOU WILL MAKE",
+    "YO PONDRE" : "I WILL PUT",
+    "TU PONDRAS" : "YOU WILL PUT",
+    "NOSOTROS PONDREMOS" : "WE WILL PUT",
+    "EL PONDRA" : "HE WILL PUT",
+    "ELLA PONDRA" : "SHE WILL PUT",
+    "ESO PONDRA" : "IT WILL PUT",
+    "ELLOS PONDRAN" : "THEY WILL PUT",
+    "USTEDES PONDRAN" : "YOU WILL PUT",
+    "YO SERE/ESTARE" : "I WILL AM",
+    "TU SERAS/ESTARAS" : "YOU WILL ARE",
+    "NOSOTROS SEREMOS/ESTAREMOS" : "WE WILL ARE",
+    "EL SERA/ESTARA" : "HE WILL BE",
+    "ELLA SERA/ESTARA" : "SHE WILL BE",
+    "ESO SERA/ESTARA" : "IT WILL BE",
+    "ELLOS SERAN/ESTARAN" : "THEY WILL ARE",
+    "USTEDES SORAN/ESTARAN" : "YOU WILL ARE",
+    "YO ENVIARE" : "I WILL SEND",
+    "TU ENVIARAS" : "YOU WILL SEND",
+    "NOSOTROS ENVIAREMOS" : "WE WILL SEND",
+    "EL ENVIARA" : "HE WILL SEND",
+    "ELLA ENVIARA" : "SHE WILL SEND",
+    "ESO ENVIARA" : "IT WILL SEND",
+    "ELLOS ENVIRAN" : "THEY WILL SEND",
+    "USTEDES ENVIRAN" : "YOU WILL SEND",
+    "YO TENDRE" : "I WILL HAVE",
+    "TU TENDRAS" : "YOU WILL HAVE",
+    "NOSOTROS TENDREMOS" : "WE WILL HAVE",
+    "EL TENDRA" : "HE WILL HAVE",
+    "ELLA TENDRA" : "SHE WILL HAVE",
+    "ESO TENDRA" : "IT WILL HAVE",
+    "ELLOS TENDRAN" : "THEY WILL HAVE",
+    "USTEDES TENDRAN" : "YOU WILL HAVE",  
+}
 
 def pracitca_dict(data):
     aciertos = 0
@@ -169,19 +291,13 @@ def pracitca_dict(data):
         if respuesta == "EXIT" :
             break
         elif data[verb_random] == respuesta:
-            print ("*correcto*")
+            print ("                 *correcto*                ")
             aciertos += 1
         else :
-            print(f"*incorrecto* la respuesta era {data[verb_random]}" )
+            print(f"    *incorrecto*       la respuesta era {data[verb_random]}" )
             fallos +=1
-    
 
-def pronombres():
-    pass
-def oraciones_sencillas():
-    pass
-def tiempos_will_would_may_migth():
-    pass
+
 def verbos_pasado():
     pass
 while True:
@@ -191,8 +307,9 @@ while True:
             1) verbos importantes
             2) pronombres
             3) pronombres + verbos 
-            4) tiempos will, would, may, migth (pronto)
-            5) verbos importantes en pasado (pronto)
+            4) tiempos futuro will 
+            5) tiempos would, may, migth
+            6) verbos importantes en pasado (pronto)
             ''')
         elije = int(input("digita la opcion de la cual quieres aprender >>> "))
 
@@ -203,7 +320,7 @@ while True:
         elif elije == 3 :
             pracitca_dict (frase_pronombre_and_verbs)
         elif elije == 4:
-            tiempos_will_would_may_migth()
+            pracitca_dict(tiempos_will)
         elif elije == 5 :
             verbos_pasado()
 
