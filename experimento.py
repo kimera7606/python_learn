@@ -403,7 +403,7 @@ palabras_1 = {
     "OSCURO" :"DARK",
     "PLANTA" : "PLANT",
     "SONRISA" :"SMILE",
-    "CHOQUE" :"CHOQUE",
+    "CHOQUE" :"SMASH",
     "FLOR" :"FLOWER",
     "FIN" : "END",
     "SOMBRERO" : "HAT",
@@ -467,6 +467,27 @@ palabras_1 = {
     "BLANCO" : "WHITE"
 }
 
+past_verb = {
+    "FUI": "WENT",
+    "VINE": "CAME",
+    "TOME": "TOOK",
+    "DI": "GAVE",
+    "MANTUVE": "KEPT",
+    "DEJE": "LET",
+    "VI": "SAW",
+    "DIJE": "SAID",
+    "PARECI": "SEEMED",
+    "CONSEGUI": "GOT",
+    "HICE-ACCION": "DID",
+    "HICE-CREAR": "MADE",
+    "PUSE": "PUT",
+    "ERA-ESTABA": "WAS",
+    "ENVIE": "SENT",
+    "TUVE": "HAD",
+    "ERAN-ESTABAN" : "WERE"
+}
+
+
 def pracitca_dict(data):
     aciertos = 0
     fallos = 0
@@ -514,6 +535,9 @@ while True:
             pracitca_dict(tiempos_will)
         elif elije == 5 :
             pracitca_dict(palabras_1)
+        elif elije == 6 :
+            pracitca_dict(past_verb)
+
 
     if __name__ == "__main__":
         start()
