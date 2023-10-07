@@ -487,12 +487,11 @@ past_verb = {
     "ERAN-ESTABAN" : "WERE"
 }
 
-
 def pracitca_dict(data):
     aciertos = 0
     fallos = 0
     print('''
-          veras a continuacion una serie de verbos en español, tu tarea es escribirlos al ingles.
+          veras a continuacion una serie de palabras en español, tu tarea es escribirlos al ingles.
           (en caso de que quieras salir de la practica escribe EXIT)
           ''')
     while True:
@@ -521,7 +520,7 @@ while True:
             3) pronombres + verbos 
             4) tiempos futuro will,would, may, migth
             5) palabras 1
-            6) verbos importantes en pasado (pronto)
+            6) verbos importantes en pasado
             ''')
         elije = int(input("digita la opcion de la cual quieres aprender >>> "))
 
