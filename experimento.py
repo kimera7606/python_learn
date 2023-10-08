@@ -466,6 +466,101 @@ palabras_1 = {
     "SABIA" : "WISE",
     "BLANCO" : "WHITE"
 }
+palabras_2 = {
+    "ALUMBRADO" : "LIGHTING",
+    "TRABAJANDO" : "WORKING",
+    "ACEITANDO" : "OILING",
+    "OFRECIENDO" : "OFFERING",
+    "OBSCURECIENDO" : "DARKING",
+    "PLANTANDO" : "PLANTING",
+    "SONRIENDO" : "SMILING",
+    "CHOCANDO" : "SMASHING",
+    "FLORECIENDO" : "FLOWERING",
+    "FINALIZADO" : "ENDING",
+    "TRABAJO" : "WORK",
+    "EMPLEO" : "JOB",
+    "ESTE, ESTA, ESTO" : "THIS",
+    "ESE, ESA, ESO" : "THAT",
+    "MUY" : "VERY",
+    "BUEN, BUENO, BUENA" : "GOOD",
+    "CIMA, CUMBRE" : "TOP",
+    "ARBOL" : "TREE",
+    "BEBE, NENE" : "BABY",
+    "MONTAÑA" : "MOUNTAIN",
+    "LAPIZ" : "PENSIL",
+    "VERDE" : "GREEN",
+    "MAPA" : "MAP",
+    "Y" : "AND",
+    "ENFERMO/MALESTAR" : "SICK",
+    "ENFERMO/ENFERMEDAD FISICA O MENTAL" : "ILL",
+    "CAMINO" : "ROAD",
+    "PLAY" : "JUEGO",
+    "PLAYING" : "JUGANDO"
+}
+
+examen_1 = {
+    "OFFER" : "OFERTA",
+    "MONDAY" : "LUNES",
+    "MI HERMANA ESTA EN URUGUAY" : "MY SISTER IS IN URUGUAY",
+    "ESA ES UNA BUENA IDEA" : "THAT IS A GOOD IDEA",
+    "EMPLEO" : "JOB",
+    "BLUE" : "AZUL",
+    "TU ESTAS RETRASADO" : "YOU ARE LATE",
+    "SON" : "HIJO",
+    "ELLOS ESTAN PLANTANDO UN ARBOL" : "THEY ARE PLANTING A TREE",
+    "BAD" : "MALO",
+    "MUY" : "VERY",
+    "MY HERMANA ESTA EN EL JARDIN" : "MY SISTER IS IN THE GARDEN",
+    "MAN" : "HOMBRE",
+    "EL ES UN HOMBRE AMABLE" : "HE IS A KIND MAN",
+    "CASA" : "HOUSE",
+    "ESTE ES EL CAMINO A CASA" : "THIS IS THE ROAD TO HOME",
+    "PLATE": "PLATO",
+    "BOY" : "CHICO",
+    "EL LAPIZ ES AZUL" : "THE PENCIL IS BLUE",
+    "PLANTAR" : "PLANT",
+    "AGUA" : "WATER",
+    "HERE" : "AQUI",
+    "ELLAS SON MIS HERMANAS" : "THEY ARE MY SISTERS",
+    "IDEA" : "IDEA",
+    "VIOLIN" : "VIOLIN",
+    "FLOR" : "FLOWER",
+    "HE" : "EL",
+    "MIO, MI" : "MY",
+    "EL CIELO ES AZUL" : "THE SKY IS BLUE",
+    "PAINT" : "PINTURA",
+    "YOUNG" : "JOVEN",
+    "GARDEN" : "GARDEN",
+    "LIGHT" : "LUZ",
+    "ELLOS" : "THEY",
+    "NOSOTROS VAMOS A CASA" : "WE GO TO HOME ",
+    "VESTIDO" : "DRESS",
+    "PINTANDO" : "PAINTING",
+    "BASE" : "BASE",
+    "ESO ES BUENO" : "IT IS GOOD",
+    "APPLE" : "MANZANA",
+    "CLEAN" : "LIMPIO",
+    "WALKING" : "CAMINANDO",
+    "EL ESTA PINTANDO" : "HE IS PAINTING",
+    "FORK" : "TENEDOR",
+    "NEWS" : "NOTICIA",
+    "RIVER" : "RIO",
+    "SKY" : "CIELO",
+    "MI HIJO ESTA AQUI" : "MY SON IS HERE",
+    "ELLA ESTA SONRIENDO" :  "SHE IS SMILING",
+    "HOY" : "TODAY",
+    "NIÑA" : "GIRL",
+    "NEGRO" : "BLACK",
+    "AMARGO" : "BITTER",
+    "LIMPIO" : "CLEAN",
+    "ELLOS ESTAN EN EL RIO" : "THEY ARE IN THE RIVER",
+    "PROFUNDO" : "DEEP",
+    "SUCIO" : "DIRTY",
+    "BEBIDA" : "DRINK",
+    "VESTIDO" : "DRESS",
+    "AMARILLO" : "YELLOW",
+    "EL ES MI HERMANO" : "HE IS MY BROTHER",
+}
 
 past_verb = {
     "FUI": "WENT",
@@ -509,8 +604,46 @@ def pracitca_dict(data):
             fallos +=1
 
 
-def verbos_pasado():
-    pass
+def repaso (datos):
+    aciertos = 0
+    fallos = 0
+    print('''
+          veras a continuacion una serie de palabras en español, tu tarea es escribirlos al ingles.
+          (en caso de que quieras salir de la practica escribe EXIT)
+          ''')
+    while True:
+        for i in dict_verb:
+            print("********************************************")
+            print(f"*aciertos* : {aciertos}, *fallos* : {fallos}")
+            prueba = input(f"traduce: {i} >> ").upper()
+            if prueba == "EXIT" :
+                break
+            elif prueba == datos[i]:
+                print ("      *** CORRECTO ***")
+                aciertos += 1
+            else:
+                while True:
+                    print (f" INCORRECTO la esrespuesta es {datos[i]} ")
+                    print(f"*aciertos* : {aciertos}, *fallos* : {fallos}")
+                    fallos += 1
+                    prueba = input(f"traduce: {i} >> ").upper()
+                    if prueba == datos[i]:
+                        print ("      *** CORRECTO ***")
+                        break
+def deseo(dato):
+    while True:
+                eleccion = int(input('''
+                                    Que te gustaria?:
+                                    presiona:
+                                    1) Aprender
+                                    2) Practicar
+                                    '''))
+                if eleccion == 1:
+                    repaso(dato)
+                elif eleccion == 2:
+                    pracitca_dict(dato)
+                else:
+                    print("Eleccion incorrecta.")
 while True:
     def start():
         print("bienvenido a : practicas de ingles")
@@ -520,22 +653,30 @@ while True:
             3) pronombres + verbos 
             4) tiempos futuro will,would, may, migth
             5) palabras 1
-            6) verbos importantes en pasado
+            6) palabras 2
+            7) *** examen 1 ***
+            8) verbos importantes en pasado
             ''')
-        elije = int(input("digita la opcion de la cual quieres aprender >>> "))
+        elije = int(input("presiona el numero correspondiente a la opcion que desees >>> "))
 
         if elije == 1 :
-            pracitca_dict(dict_verb)
+            deseo(dict_verb)
         elif elije == 2 : 
-            pracitca_dict(dict_pronombres)
+            deseo(dict_pronombres)
         elif elije == 3 :
-            pracitca_dict (frase_pronombre_and_verbs)
+            deseo(frase_pronombre_and_verbs)
         elif elije == 4:
-            pracitca_dict(tiempos_will)
+            deseo(tiempos_will)
         elif elije == 5 :
-            pracitca_dict(palabras_1)
-        elif elije == 6 :
-            pracitca_dict(past_verb)
+            deseo(palabras_1)
+        elif elije == 6:
+            deseo(palabras_2)
+        elif elije == 7:
+            repaso(examen_1)
+        elif elije == 8 :
+            deseo(past_verb)
+        else:
+            print ("eleccion incorrecta")
 
 
     if __name__ == "__main__":
