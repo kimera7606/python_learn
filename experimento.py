@@ -611,25 +611,27 @@ def repaso (datos):
           veras a continuacion una serie de palabras en español, tu tarea es escribirlos al ingles.
           (en caso de que quieras salir de la practica escribe EXIT)
           ''')
-    while True:
-        for i in dict_verb:
-            print("********************************************")
-            print(f"*aciertos* : {aciertos}, *fallos* : {fallos}")
-            prueba = input(f"traduce: {i} >> ").upper()
-            if prueba == "EXIT" :
-                break
-            elif prueba == datos[i]:
-                print ("      *** CORRECTO ***")
-                aciertos += 1
-            else:
-                while True:
-                    print (f" INCORRECTO la esrespuesta es {datos[i]} ")
-                    print(f"*aciertos* : {aciertos}, *fallos* : {fallos}")
-                    fallos += 1
-                    prueba = input(f"traduce: {i} >> ").upper()
-                    if prueba == datos[i]:
-                        print ("      *** CORRECTO ***")
-                        break
+    
+    for i in datos:
+        print("********************************************")
+        print(f"*aciertos* : {aciertos}, *fallos* : {fallos}")
+        prueba = input(f"traduce: {i} >> ").upper()
+        if prueba == "EXIT" :
+            break
+        elif prueba == datos[i]:
+            print ("      *** CORRECTO ***")
+            aciertos += 1
+        else:
+            while True:
+                fallos += 1
+                print (f" INCORRECTO la esrespuesta es {datos[i]} ")
+                print(f"*aciertos* : {aciertos}, *fallos* : {fallos}")
+                prueba = input(f"traduce: {i} >> ").upper()
+                if prueba == "EXIT" :
+                    break
+                elif prueba == datos[i]:
+                    print ("      *** CORRECTO ***")
+                    break
 def deseo(dato):
     while True:
                 eleccion = int(input('''
@@ -644,8 +646,9 @@ def deseo(dato):
                     pracitca_dict(dato)
                 else:
                     print("Eleccion incorrecta.")
-while True:
-    def start():
+
+def start():
+    while True:
         print("bienvenido a : practicas de ingles")
         print('''
             1) verbos importantes
@@ -679,5 +682,5 @@ while True:
             print ("eleccion incorrecta")
 
 
-    if __name__ == "__main__":
-        start()
+if __name__ == "__main__":
+    start()
