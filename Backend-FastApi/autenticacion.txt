@@ -1,0 +1,5 @@
+para auntenticar y darle seguridad a nuestro https
+necesitamos instalar jwt un modulo de autentuicacion para python este modulo 
+se intala de la siguiente manera
+
+pip install PyJWT

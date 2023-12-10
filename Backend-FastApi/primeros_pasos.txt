@@ -1,0 +1,44 @@
+FastApi es un framework moderno y de alto rendimiento para creacion de API con python
+
+
+lo primero que tenemos que hacer es crear un entorno virtuall:
+
+(1) python3 -m venv venv :
+lo que hacemos aqui desde la terminal es llamar a python y la -m significa que es un modulo, luego el modulo entorno virtual (venv) seguido del nombre
+que se le queire asignar en este caso o normalmente se utliza el mismo nombre (venv)
+
+(2) source venv/bin/activate:
+lo que hacemos aqui es iniciar el entonrno virtual de esa maneras siempre iniciando 
+con el nombre del enotncrno en este caso venv, seguido de bin que es la carpeta donde esta ubicada
+y luego activate, veremos que aparece en nuestra ruta el simbolo de python o el nombre de nuestro entorno virtual
+
+(3) deactivate:
+se utiliza para desactivar nuestro entorno virutual
+
+(4) mientras tengamos nuestro entorno vitual activo debemos descargar las librerias correspondientes
+
+(5) pip install fastapi:
+el framwork en el cual trabajaremos nuestra api
+
+(6) pip instal uvicorn:
+es la libreria que nos permitira conectarnos al servidor 
+
+listo! ya podemos crear unestro archivo .py para que empezemos a crear una rest full como es ! 
+
+una vez creado nuestra api debemos inciarla con uviconr #nombreArchivo:#nombre_instancia
+luego de esto podremos ver la repsuesta del servidor tambien podemos 
+entrar o accder a wganger con solo agregar a la ruta /docs
+
+otras que podemos hacer es --port 5000(para cambiar el puerto que queramos)
+--host 0.0.0.0 (para que se puede entrar desde la red )
+
+los principales meotodos soportados por HTTP y por ello usados por una API REST son:
+
+POST : crear un recurso nuevo (crear)
+GET : consultar informacion de un recurso (leer)
+PUT : modificar un recurso existente (actualizar)
+DELETE : eliminar un recurso (borrar)
+
+
+
+
